@@ -13,7 +13,16 @@ class homepage extends StatelessWidget {
     return Center(
         child: Scaffold(
       appBar: AppBar(
-        actions: [IconButton(onPressed: signout, icon: Icon(Icons.logout))],
+        actions: [
+          IconButton(
+              onPressed: signout,
+              icon: Icon(
+                Icons.logout,
+                color: Colors.white,
+                size: 50.0,
+              )),
+        ],
+        backgroundColor: Colors.black,
       ),
       backgroundColor: Colors.black,
       body: Center(
